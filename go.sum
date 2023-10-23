@@ -38,8 +38,16 @@ cloud.google.com/go/storage v1.14.0/go.mod h1:GrKmX003DSIwi9o29oFT7YDnHYwZoctc3f
 dmitri.shuralyov.com/gpu/mtl v0.0.0-20190408044501-666a987793e9/go.mod h1:H6x//7gZCb22OMCxBHrMx7a5I7Hp++hsVxbQ4BYO7hU=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/BurntSushi/xgb v0.0.0-20160522181843-27f122750802/go.mod h1:IVnqGOEym/WlBOVXweHU+Q+/VP0lqqI8lqeDx9IjBqo=
+github.com/Dparty/auth-services v0.0.0-20231019061354-c64c3633a40a h1:xY+FNGpUTusgG4bsoCEEvTOMuqa4W8dwxxvJjrgs1J0=
+github.com/Dparty/auth-services v0.0.0-20231019061354-c64c3633a40a/go.mod h1:VrjdhBd9/Sf57ZqVE6fdwWljvPbooUSEZPF7Axjnmww=
+github.com/Dparty/auth-services v0.0.0-20231021021808-85da0505de6a h1:Otksi7qu96Qd3t/dBzz8f+N/dkWyQMh38LbKDj6Dv5E=
+github.com/Dparty/auth-services v0.0.0-20231021021808-85da0505de6a/go.mod h1:bQaUetoMSj/nsVe/2YDeWUCAyOSfolyjdmuhiRzWNRA=
+github.com/Dparty/auth-services v0.0.0-20231023010117-ddd69db44cf5 h1:AVoLDbZxGl5pQ+t5u+dEieQDMAyhSxk1BCAtTD3hCLk=
+github.com/Dparty/auth-services v0.0.0-20231023010117-ddd69db44cf5/go.mod h1:bQaUetoMSj/nsVe/2YDeWUCAyOSfolyjdmuhiRzWNRA=
 github.com/Dparty/common v0.0.0-20230929033726-ff769bca8c94 h1:YYt8QQbi9RQB+0GDuL7DzFiOp/3W7mxq63Jvtq6LP5M=
 github.com/Dparty/common v0.0.0-20230929033726-ff769bca8c94/go.mod h1:sY807DCbNdj2+kTNspZcO7/X1zJBmTmxy5TSQA7+lL8=
+github.com/Dparty/common v0.0.0-20231021010642-807615a29e5c h1:uOqHWrnZF6ZzKnPWo9llDpYr/JPM/SVKGYcVadVyhNA=
+github.com/Dparty/common v0.0.0-20231021010642-807615a29e5c/go.mod h1:sY807DCbNdj2+kTNspZcO7/X1zJBmTmxy5TSQA7+lL8=
 github.com/Dparty/dao v0.0.0-20231019033252-c898a1611563 h1:bkKL5s8HQCJbF7JM8wsuw5b3dl6rnC/MEQe6mRcTcbI=
 github.com/Dparty/dao v0.0.0-20231019033252-c898a1611563/go.mod h1:RmzSSQbCA4HQuNrT90g9qnAZTrp4V7TkrL/8glYVAoM=
 github.com/Dparty/dao v0.0.0-20231019065120-5af24f478ff1 h1:SZ+lUSK5xhg08hAhBkW3979WDmjW6jRK9hx4jcit3Hs=

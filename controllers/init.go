@@ -3,14 +3,15 @@ package controllers
 import (
 	"fmt"
 
-	authservices "github.com/Dparty/auth-api/services"
+	authServices "github.com/Dparty/auth-services"
+	"github.com/Dparty/common/fault"
 	"github.com/Dparty/common/server"
 	"github.com/Dparty/dao"
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/viper"
 )
 
-var authService authservices.AuthService
+var authService authServices.AuthService
 var router *gin.Engine
 
 func Init(addr ...string) {
@@ -31,10 +32,25 @@ func Init(addr ...string) {
 	if err != nil {
 		panic(err)
 	}
-	authService = authservices.NewAuthService(db)
+	authService = authServices.NewAuthService(db)
 	router = gin.Default()
 	// router.Use(authService.Auth())
 	router.Use(server.CorsMiddleware())
-	router.POST("/sessions", CreateSession)
+	var authApi AuthApi
+	router.POST("/sessions", authApi.CreateSession)
 	router.Run(addr...)
+}
+
+func getAccount(ctx *gin.Context) *authServices.Account {
+	accountInterface, ok := ctx.Get("account")
+	if !ok {
+		fault.GinHandler(ctx, fault.ErrUnauthorized)
+		return nil
+	}
+	account, ok := accountInterface.(authServices.Account)
+	if !ok {
+		fault.GinHandler(ctx, fault.ErrUnauthorized)
+		return nil
+	}
+	return &account
 }
