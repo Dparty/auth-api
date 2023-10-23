@@ -38,6 +38,7 @@ func Init(addr ...string) {
 	router.Use(server.CorsMiddleware())
 	var authApi AuthApi
 	router.POST("/sessions", authApi.CreateSession)
+	router.POST("/accounts", authApi.CreateAccount)
 	router.Run(addr...)
 }
 
