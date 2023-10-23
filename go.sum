@@ -44,6 +44,8 @@ github.com/Dparty/auth-services v0.0.0-20231021021808-85da0505de6a h1:Otksi7qu96
 github.com/Dparty/auth-services v0.0.0-20231021021808-85da0505de6a/go.mod h1:bQaUetoMSj/nsVe/2YDeWUCAyOSfolyjdmuhiRzWNRA=
 github.com/Dparty/auth-services v0.0.0-20231023010117-ddd69db44cf5 h1:AVoLDbZxGl5pQ+t5u+dEieQDMAyhSxk1BCAtTD3hCLk=
 github.com/Dparty/auth-services v0.0.0-20231023010117-ddd69db44cf5/go.mod h1:bQaUetoMSj/nsVe/2YDeWUCAyOSfolyjdmuhiRzWNRA=
+github.com/Dparty/auth-services v0.0.0-20231023013208-6540854fdcd8 h1:R1NKyWDF9y3iWvHX5bVqDmg/iWKAt9hLNNgr2HECAWg=
+github.com/Dparty/auth-services v0.0.0-20231023013208-6540854fdcd8/go.mod h1:bQaUetoMSj/nsVe/2YDeWUCAyOSfolyjdmuhiRzWNRA=
 github.com/Dparty/common v0.0.0-20230929033726-ff769bca8c94 h1:YYt8QQbi9RQB+0GDuL7DzFiOp/3W7mxq63Jvtq6LP5M=
 github.com/Dparty/common v0.0.0-20230929033726-ff769bca8c94/go.mod h1:sY807DCbNdj2+kTNspZcO7/X1zJBmTmxy5TSQA7+lL8=
 github.com/Dparty/common v0.0.0-20231021010642-807615a29e5c h1:uOqHWrnZF6ZzKnPWo9llDpYr/JPM/SVKGYcVadVyhNA=

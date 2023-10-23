@@ -11,7 +11,7 @@ require (
 )
 
 require (
-	github.com/Dparty/auth-services v0.0.0-20231023010117-ddd69db44cf5 // indirect
+	github.com/Dparty/auth-services v0.0.0-20231023013208-6540854fdcd8 // indirect
 	github.com/bwmarrin/snowflake v0.3.0 // indirect
 	github.com/bytedance/sonic v1.10.0-rc2 // indirect
 	github.com/chenzhuoyu/base64x v0.0.0-20230717121745-296ad89f973d // indirect
