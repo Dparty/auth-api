@@ -34,7 +34,7 @@ func Init(addr ...string) {
 	}
 	authService = authServices.NewAuthService(db)
 	router = gin.Default()
-	// router.Use(authService.Auth())
+	router.Use(authService.Auth())
 	router.Use(server.CorsMiddleware())
 	var authApi AuthApi
 	router.POST("/sessions", authApi.CreateSession)
