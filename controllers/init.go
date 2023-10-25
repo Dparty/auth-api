@@ -49,7 +49,7 @@ func Init(addr ...string) {
 	router.Run(addr...)
 }
 
-func getAccount(ctx *gin.Context) *authServices.Account {
+func GetAccount(ctx *gin.Context) *authServices.Account {
 	accountInterface, ok := ctx.Get("account")
 	if !ok {
 		fault.GinHandler(ctx, fault.ErrUnauthorized)

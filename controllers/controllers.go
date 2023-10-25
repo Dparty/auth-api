@@ -24,7 +24,7 @@ func (AuthApi) CreateSession(ctx *gin.Context) {
 }
 
 func (AuthApi) CreateAccount(ctx *gin.Context) {
-	account := getAccount(ctx)
+	account := GetAccount(ctx)
 	if account == nil {
 		fault.GinHandler(ctx, fault.ErrUnauthorized)
 		return
