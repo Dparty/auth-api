@@ -3,15 +3,14 @@ module github.com/Dparty/auth-api
 go 1.21.1
 
 require (
+	github.com/Dparty/auth-services v0.0.0-20231025025315-9db0bf629407
 	github.com/Dparty/common v0.0.0-20231021010642-807615a29e5c
 	github.com/Dparty/dao v0.0.0-20231019065120-5af24f478ff1
 	github.com/gin-gonic/gin v1.9.1
 	github.com/spf13/viper v1.17.0
-	gorm.io/gorm v1.25.5
 )
 
 require (
-	github.com/Dparty/auth-services v0.0.0-20231025025315-9db0bf629407 // indirect
 	github.com/bwmarrin/snowflake v0.3.0 // indirect
 	github.com/bytedance/sonic v1.10.0-rc2 // indirect
 	github.com/chenzhuoyu/base64x v0.0.0-20230717121745-296ad89f973d // indirect
@@ -58,4 +57,5 @@ require (
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	gorm.io/driver/mysql v1.5.2 // indirect
+	gorm.io/gorm v1.25.5 // indirect
 )
