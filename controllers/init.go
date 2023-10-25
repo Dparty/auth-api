@@ -42,7 +42,7 @@ func Init(addr ...string) {
 	router.POST("/accounts", authApi.CreateAccount)
 	router.GET("/version", func(ctx *gin.Context) {
 		ctx.JSON(http.StatusOK, gin.H{
-			"version": "0.0.1",
+			"version": "0.0.2",
 		})
 	})
 	router.Run(addr...)
