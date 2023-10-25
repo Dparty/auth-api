@@ -2,6 +2,7 @@ package controllers
 
 import (
 	"fmt"
+	"net/http"
 
 	authServices "github.com/Dparty/auth-services"
 	"github.com/Dparty/common/fault"
@@ -39,6 +40,11 @@ func Init(addr ...string) {
 	var authApi AuthApi
 	router.POST("/sessions", authApi.CreateSession)
 	router.POST("/accounts", authApi.CreateAccount)
+	router.POST("/version", func(ctx *gin.Context) {
+		ctx.JSON(http.StatusOK, gin.H{
+			"version": "0.0.1",
+		})
+	})
 	router.Run(addr...)
 }
 
