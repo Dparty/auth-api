@@ -33,6 +33,7 @@ func Init(addr ...string) {
 	if err != nil {
 		panic(err)
 	}
+	authServices.Init(db)
 	authService = authServices.NewAuthService(db)
 	router = gin.Default()
 	router.Use(authService.Auth())
