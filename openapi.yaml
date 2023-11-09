@@ -1,6 +1,6 @@
 openapi: 3.0.3
 info:
-  title: Dparty APIs
+  title: Auth APIs
   description: |-
     Dparty
   contact:
