@@ -40,8 +40,12 @@ github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03
 github.com/BurntSushi/xgb v0.0.0-20160522181843-27f122750802/go.mod h1:IVnqGOEym/WlBOVXweHU+Q+/VP0lqqI8lqeDx9IjBqo=
 github.com/Dparty/auth-services v0.0.0-20231025025315-9db0bf629407 h1:K9CZ08DoDR+/dvVOObxZEGzKTq3zkAfgVkDZ4iAyh0w=
 github.com/Dparty/auth-services v0.0.0-20231025025315-9db0bf629407/go.mod h1:bQaUetoMSj/nsVe/2YDeWUCAyOSfolyjdmuhiRzWNRA=
+github.com/Dparty/auth-services v0.0.0-20231116081657-791fe00583e5 h1:AFXld+tQTzVLXZb8BLGBk3wvZq5cZ1U9kEGmz4kgEc0=
+github.com/Dparty/auth-services v0.0.0-20231116081657-791fe00583e5/go.mod h1:XW8zgKmY5Bco80BonQJZ+09DLCPK/1nc9SxG0WIGkcE=
 github.com/Dparty/common v0.0.0-20231021010642-807615a29e5c h1:uOqHWrnZF6ZzKnPWo9llDpYr/JPM/SVKGYcVadVyhNA=
 github.com/Dparty/common v0.0.0-20231021010642-807615a29e5c/go.mod h1:sY807DCbNdj2+kTNspZcO7/X1zJBmTmxy5TSQA7+lL8=
+github.com/Dparty/common v0.0.0-20231116081526-d4557a18ca69 h1:U/n4npzlHUJYLEC3NK02cCiQuvAmvO3+UR8BmMPaX6Y=
+github.com/Dparty/common v0.0.0-20231116081526-d4557a18ca69/go.mod h1:sY807DCbNdj2+kTNspZcO7/X1zJBmTmxy5TSQA7+lL8=
 github.com/Dparty/dao v0.0.0-20231019065120-5af24f478ff1 h1:SZ+lUSK5xhg08hAhBkW3979WDmjW6jRK9hx4jcit3Hs=
 github.com/Dparty/dao v0.0.0-20231019065120-5af24f478ff1/go.mod h1:RmzSSQbCA4HQuNrT90g9qnAZTrp4V7TkrL/8glYVAoM=
 github.com/bwmarrin/snowflake v0.3.0 h1:xm67bEhkKh6ij1790JB83OujPR5CzNe8QuQqAgISZN0=
