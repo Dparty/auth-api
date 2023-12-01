@@ -13,7 +13,6 @@ var authService = authServices.GetAuthService()
 var router *gin.Engine
 
 func Init(addr ...string) {
-	authService = authServices.NewAuthService()
 	router = gin.Default()
 	router.Use(authService.Auth())
 	router.Use(server.CorsMiddleware())
