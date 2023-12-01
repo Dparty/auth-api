@@ -3,14 +3,13 @@ module github.com/Dparty/auth-api
 go 1.21.1
 
 require (
-	github.com/Dparty/auth-services v0.0.0-20231116081657-791fe00583e5
-	github.com/Dparty/common v0.0.0-20231116081526-d4557a18ca69
-	github.com/Dparty/dao v0.0.0-20231019065120-5af24f478ff1
+	github.com/Dparty/auth-services v0.0.0-20231201015201-aa49b6602be7
+	github.com/Dparty/common v0.0.0-20231130064223-d8a97151b7f1
 	github.com/gin-gonic/gin v1.9.1
-	github.com/spf13/viper v1.17.0
 )
 
 require (
+	github.com/Dparty/dao v0.0.0-20231130075946-768f1fff262f // indirect
 	github.com/bwmarrin/snowflake v0.3.0 // indirect
 	github.com/bytedance/sonic v1.10.0-rc2 // indirect
 	github.com/chenzhuoyu/base64x v0.0.0-20230717121745-296ad89f973d // indirect
@@ -42,16 +41,17 @@ require (
 	github.com/spf13/afero v1.10.0 // indirect
 	github.com/spf13/cast v1.5.1 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
+	github.com/spf13/viper v1.17.0 // indirect
 	github.com/subosito/gotenv v1.6.0 // indirect
 	github.com/twitchyliquid64/golang-asm v0.15.1 // indirect
 	github.com/ugorji/go/codec v1.2.11 // indirect
 	go.uber.org/atomic v1.9.0 // indirect
 	go.uber.org/multierr v1.9.0 // indirect
 	golang.org/x/arch v0.4.0 // indirect
-	golang.org/x/crypto v0.13.0 // indirect
+	golang.org/x/crypto v0.14.0 // indirect
 	golang.org/x/exp v0.0.0-20230905200255-921286631fa9 // indirect
-	golang.org/x/net v0.15.0 // indirect
-	golang.org/x/sys v0.12.0 // indirect
+	golang.org/x/net v0.17.0 // indirect
+	golang.org/x/sys v0.13.0 // indirect
 	golang.org/x/text v0.13.0 // indirect
 	google.golang.org/protobuf v1.31.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect

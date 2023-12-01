@@ -1,40 +1,19 @@
 package controllers
 
 import (
-	"fmt"
 	"net/http"
 
 	authServices "github.com/Dparty/auth-services"
 	"github.com/Dparty/common/fault"
 	"github.com/Dparty/common/server"
-	"github.com/Dparty/dao"
 	"github.com/gin-gonic/gin"
-	"github.com/spf13/viper"
 )
 
-var authService authServices.AuthService
+var authService = authServices.GetAuthService()
 var router *gin.Engine
 
 func Init(addr ...string) {
-	var err error
-	viper.SetConfigName(".env.yaml")
-	viper.SetConfigType("yaml")
-	viper.AddConfigPath(".")
-	err = viper.ReadInConfig()
-	if err != nil {
-		panic(fmt.Errorf("databases fatal error config file: %w", err))
-	}
-	user := viper.GetString("database.user")
-	password := viper.GetString("database.password")
-	host := viper.GetString("database.host")
-	port := viper.GetString("database.port")
-	database := viper.GetString("database.database")
-	db, err := dao.NewConnection(user, password, host, port, database)
-	if err != nil {
-		panic(err)
-	}
-	authServices.Init(db)
-	authService = authServices.NewAuthService(db)
+	authService = authServices.NewAuthService()
 	router = gin.Default()
 	router.Use(authService.Auth())
 	router.Use(server.CorsMiddleware())
