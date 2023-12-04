@@ -18,6 +18,7 @@ func Init(addr ...string) {
 	router.Use(server.CorsMiddleware())
 	var authApi AuthApi
 	server.MetricsMiddleware(router)
+	router.GET("/me", authApi.GetMe)
 	router.POST("/sessions", authApi.CreateSession)
 	router.POST("/accounts", authApi.CreateAccount)
 	router.GET("/version", func(ctx *gin.Context) {

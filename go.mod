@@ -3,8 +3,8 @@ module github.com/Dparty/auth-api
 go 1.21.1
 
 require (
-	github.com/Dparty/auth-services v0.0.0-20231201015201-aa49b6602be7
-	github.com/Dparty/common v0.0.0-20231204061145-f9e546f5f62b
+	github.com/Dparty/auth-services v0.0.0-20231204091948-1345935cb765
+	github.com/Dparty/common v0.0.0-20231204091534-90b252024099
 	github.com/gin-gonic/gin v1.9.1
 )
 

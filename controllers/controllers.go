@@ -23,6 +23,18 @@ func (AuthApi) CreateSession(ctx *gin.Context) {
 	})
 }
 
+func (AuthApi) GetMe(ctx *gin.Context) {
+	account := GetAccount(ctx)
+	if account == nil {
+		fault.GinHandler(ctx, fault.ErrUnauthorized)
+		return
+	}
+	ctx.JSON(http.StatusOK, models.Account{
+		Email: account.Email(),
+		Role:  string(account.Role()),
+	})
+}
+
 func (AuthApi) CreateAccount(ctx *gin.Context) {
 	account := GetAccount(ctx)
 	if account == nil {

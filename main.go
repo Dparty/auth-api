@@ -2,8 +2,9 @@ package main
 
 import (
 	"github.com/Dparty/auth-api/controllers"
+	"github.com/Dparty/common/config"
 )
 
 func main() {
-	controllers.Init(":8080")
+	controllers.Init(":" + config.GetString("server.port"))
 }
